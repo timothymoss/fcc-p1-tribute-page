@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 	</head>
 	<style>
+		#main {
+			flex: auto;
+		}
 		#img-div {
 			
 		}
+		<!-- WRAP IMAGE AND CAPTION
+				CENTER IMAGE
+				RESPONSIVELY RESIZE TO WIDTH OF PARENT, NO LARGER THAN ORIGINAL -->
 		
 		#image {
 			
 		}
 		
 		img {
-			
+			max-width: 100%
+			height: auto;
+		}
+
+		#image-caption {
+			text-align: center;
 		}
 	</style>
 	<body>
-		<div id="main">
-			<div id="title">
-				Harvey Milk
-			</div>
-			<div id="img-div">
-				<figure><img src="https://ichef.bbci.co.uk/live-experience/cps/1248/cpsprodpb/vivo/live/images/2017/2/1/b13cb333-15e8-4fa9-b50c-d19e4d17f1a8.jpg" id="image">
-				<figcaption id="img-caption">PUT IMAGE CAPTION HERE</figcaption>
-				WRAP IMAGE AND CAPTION
-				CENTER IMAGE
-				RESPONSIVELY RESIZE TO WIDTH OF PARENT, NO LARGER THAN ORIGINAL
+		<main id="main">
+				<h1 id="title">Harvey Milk</h1>
+				<p>The first elected LGBT official in California's history.</p>
+				<figure id="img-div">
+					<img src="https://ichef.bbci.co.uk/live-experience/cps/1248/cpsprodpb/vivo/live/images/2017/2/1/b13cb333-15e8-4fa9-b50c-d19e4d17f1a8.jpg" id="image" alt="Harvey Milk smiling and standing on a sidewalk in San Francisco">
+					<figcaption id="img-caption"><p>Harvey Milk is the most famous and most significantly open LGBT official ever elected in the United States.</p></figcaption>
 				</figure>
-			</div>
-			<div id="tribute-info">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas, augue sed faucibus blandit, lacus purus vehicula lacus, in mollis ex metus et erat. Aenean quis pretium purus. Maecenas ac dapibus elit, at facilisis nunc. Sed congue eros ut nulla efficitur, sit amet tincidunt quam laoreet. Quisque posuere euismod ligula, et tristique est porta sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, commodo et justo id, feugiat tristique arcu. Cras ut mauris eget augue luctus varius vitae ut nisl. Proin ut purus pulvinar, consectetur dui commodo, laoreet est. Aenean in rutrum sapien. Donec pulvinar mauris a sagittis cursus.</p>
+			<section id="tribute-info">
+				<h3>Here's some important contribitions he made in life:</h3>
 				<ul>
 					<li>Born...</li>
 					<li>Item 2</li>
@@ -39,7 +45,7 @@
 					<li>Death...</li>
 				</ul>
 				<p><a href="https://en.wikipedia.org/wiki/Harvey_Milk" target="_blank" id="tribute-link">More information about Harvey Milk's life.</a></p>
-			</div>
-		</div>
+			</section>
+		</main>
 	</body>
 </html>
